@@ -1,0 +1,36 @@
+.Fullcontainer2{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 3rem;
+}
+
+#insideAboutContainer{
+    margin: auto;
+    width: 60%;
+    position: relative;
+}
+
+#about_head{
+    width: fit-content;
+    padding: 3rem;
+    padding-bottom: 2rem;
+}
+
+.paras{
+    width: 65%;
+    position: relative;
+    margin: auto;
+    padding: 1rem;
+}
+
+#content{
+    display: inline-flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.externalLinks{
+    text-decoration: none;
+}

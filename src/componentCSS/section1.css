@@ -1,0 +1,50 @@
+#sec1 {
+    width: 20%;
+    height: 82.5vh;
+    position: relative;
+}
+
+#insideSec1{
+    width: 100%;
+    display: inline-flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.sec4Label_insideSec1{
+    width: 50%;
+    position: relative;
+    float: left;
+}
+
+.flex-item_insideSec1{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.flex-item_image{
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    outline: solid .5rem rgb(130, 128, 128);
+
+}
+
+#first_item_insideSec1{
+    margin-top: 2rem;
+}
+
+.sec1_group_part{
+    margin: 0.4rem;
+}

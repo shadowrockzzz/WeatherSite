@@ -1,0 +1,34 @@
+.sec4Container{
+    width: 100%;
+    height: 42.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-input{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.flex-column1{
+    width: 50%;
+    text-align: left;
+}
+
+.flex-column2{
+    width: 50%;
+    text-align: left;
+}
+
+.sec4Label{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+}
+
+.flex-item{
+    margin: 1rem 0px;
+
+    padding: 0.5rem 0.7rem;
+}

@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./Images/Wather_Image.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+
 }
 
 code {

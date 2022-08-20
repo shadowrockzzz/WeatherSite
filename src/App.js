@@ -1,23 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+import Section1And2 from './components/Section1And2';
+import HeadSection from './components/HeadSection';
+import LoadingCover from './components/LoadingCover';
+import React, { useState } from 'react'
+import AboutSection from './components/AboutSection';
+import GoogleAd from './components/GoogleAd';
+import ErrorBoundary from './components/ErrorBoundary';
+
 
 function App() {
+
+  const [coverUp,setCoverUp] =useState(false)
+
+  const [defaultSelection,changeDefaultSelection] =useState(true)
+
+  function headClick(){
+
+    changeDefaultSelection(true);
+
+  }
+
+  function aboutClick(){
+
+    changeDefaultSelection(false)
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {(coverUp)? <LoadingCover></LoadingCover> : <div></div>}
+
+      <HeadSection headClick={headClick} aboutClick={aboutClick} />
+      
+      {defaultSelection ? <Section1And2 coverFunc={setCoverUp} /> : <AboutSection></AboutSection>}
+      
     </div>
   );
 }
